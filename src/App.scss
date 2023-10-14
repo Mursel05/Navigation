@@ -1,0 +1,191 @@
+body {
+  background-color: hsl(207, 26%, 17%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+img {
+  opacity: 0;
+  visibility: hidden;
+  max-width: 0rem;
+  width: clamp(0rem, 50%, 2rem);
+}
+img:hover {
+  box-shadow: 0 0 9px 3px hsl(150, 100%, 66%);
+}
+.circles {
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.empty {
+  width: 3rem;
+  height: 3rem;
+}
+.circle {
+  z-index: 5;
+  background-color: white;
+  position: absolute;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle1 {
+  top: 4rem;
+  left: 4rem;
+}
+.circle2 {
+  top: 4rem;
+  left: 4.7rem;
+}
+.circle3 {
+  top: 4rem;
+  left: 5.4rem;
+}
+.circle4 {
+  top: 4.7rem;
+  left: 4rem;
+}
+.circle5 {
+  top: 4.7rem;
+  left: 4.7rem;
+  z-index: 2;
+}
+.circle6 {
+  top: 4.7rem;
+  left: 5.4rem;
+}
+.circle7 {
+  top: 5.4rem;
+  left: 4rem;
+}
+.circle8 {
+  top: 5.4rem;
+  left: 4.7rem;
+}
+.circle9 {
+  top: 5.4rem;
+  left: 5.4rem;
+}
+.open {
+  .circle {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    background-color: hsl(209, 23%, 22%);
+  }
+  .circle1 {
+    top: 0.2rem;
+    left: 0.1rem;
+    img {
+      visibility: visible;
+      opacity: 1;
+      max-width: 3rem;
+    }
+  }
+  .circle2 {
+    top: 0.2rem;
+    left: 3.4rem;
+    img {
+      visibility: visible;
+      opacity: 1;
+      max-width: 3rem;
+    }
+  }
+  .circle3 {
+    top: 0.2rem;
+    left: 6.6rem;
+    img {
+      visibility: visible;
+      opacity: 1;
+      max-width: 3rem;
+    }
+  }
+  .circle4 {
+    top: 3.5rem;
+    left: 0.1rem;
+    img {
+      visibility: visible;
+      opacity: 1;
+      max-width: 3rem;
+    }
+  }
+  .circle5 {
+    top: 3.5rem;
+    left: 3.4rem;
+    img {
+      visibility: visible;
+      opacity: 1;
+      max-width: 3rem;
+    }
+  }
+  .circle6 {
+    top: 3.5rem;
+    left: 6.6rem;
+    img {
+      visibility: visible;
+      opacity: 1;
+      max-width: 3rem;
+    }
+  }
+  .circle7 {
+    top: 6.7rem;
+    left: 0.1rem;
+    img {
+      visibility: visible;
+      opacity: 1;
+      max-width: 3rem;
+    }
+  }
+  .circle8 {
+    top: 6.7rem;
+    left: 3.4rem;
+    img {
+      visibility: visible;
+      opacity: 1;
+      max-width: 3rem;
+    }
+  }
+  .circle9 {
+    top: 6.7rem;
+    left: 6.6rem;
+    img {
+      visibility: visible;
+      opacity: 1;
+      max-width: 3rem;
+    }
+  }
+}
+.circle1,
+.circle9 {
+  transition-delay: 0.6s;
+}
+.circle2,
+.circle8 {
+  transition-delay: 0.3s;
+}
+.circle3,
+.circle7 {
+  transition-delay: 0.9s;
+}
+.circle4,
+.circle6 {
+  transition-delay: 0s;
+}
+.circle5 {
+  transition-delay: 1.2s;
+}
